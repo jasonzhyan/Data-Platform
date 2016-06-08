@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<!-- page title -->
+<title>Qibebt基础数据平台</title>
+<!-- add css stylesheets -->	
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/skeleton.css"/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
+
+<!-- login Form -->
+<link rel="stylesheet" type="text/css" href="css/login.css"/>
+
+<!--[if gte IE 8]>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/ie8up.css" />
+<![endif]-->
+<!--[if gte IE 9]>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/ie8up.css" />
+<![endif]-->
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/cas.ico">
+<!-- jquery -->
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+
+<!--侧边树加jstree
+<link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />-->
+	<link rel="stylesheet" href="./assets/dist/themes/default/style.css" />
+
+	<!--[if lt IE 9]><script src="./assets/respond.js"></script><![endif]-->
+	
+	<script>window.$q=[];window.$=window.jQuery=function(a){window.$q.push(a);};</script>
+<!--侧边树加jstree-->
+
+<!--bs table 表格显示-->
+   <link rel="stylesheet" href="./bsTable/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./bsTable/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="./bsTable/css/bootstrap-table.min.css" />
+<!--bs table 表格显示-->
+
+<!--jquery弹出遮罩层用于弹出登陆框-->
+<link rel="stylesheet" type="text/css" href="./jqueryModel/css/model.css">
+<script>
+jQuery(document).ready(function($) {
+	$('.theme-login').click(function(){
+	alert('ss')
+		$('.theme-popover-mask').fadeIn(100);
+		$('.theme-popover').slideDown(200);
+	})
+	$('.theme-poptit .close').click(function(){
+		$('.theme-popover-mask').fadeOut(100);
+		$('.theme-popover').slideUp(200);
+	})
+
+})
+</script>
+<!--jquery弹出遮罩层用于弹出登陆框-->
+
+<!--友情链接网站描述子标签
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+
+<script src="js/superfish.js" type="text/javascript"></script>
+
+<script src="js/jquery.fitvids.js"  type="text/javascript"></script>-->
+
+
+</head>
+<body>	
+<!-- Image Back ground and pattern Back ground  -->
+	<img src="images/bg.jpg" alt="" id="background" />
+	<div class="header_top_second">
+		<a href="#"><img src="images/0-3.jpg" alt="这里放banner，待设计" width="1040px" height="200px"/></a>
+	</div>
+		
+	<!-- Main header -->
+	<div id="main_wrapper">
+		<div class="main_wrapper_inner">
+		<!-- Header -->
+			<div class="header_menu">
+				<div class="header_top_inner">
+					<div class="container sixteen columns">
+						<!-- begin navigation -->
+						<div class="main_menu">
+							<nav id="dropdown">
+								<ul class="sf-menu clearfix">								
+									<li><a href="login.html" class=""><span><i class="icon-home"></i>网站首页</span></a>
+									</li>
+									<li><a href="intro.html" class=""><span><i class="icon-feature"></i>平台简介</span></a>
+										<!--<ul>
+											<li><a href="#">功能定位</a></li>
+											<li><a href="#">数据内容</a></li>
+											<li><a href="#">共享机制</a></li>
+										</ul>-->
+									</li>
+									<li><a href="dataBrowse.html" class="trigger"><span><i class="icon-staff"></i>数据浏览</span></a>
+										<!--<ul>
+											<li><a href="#">按主题浏览</a></li>
+										</ul>-->
+									</li>	
+									<li><a href="dataSearch.html" class="trigger"><span><i class="icon-service"></i>数据查询</span></a></li>									
+									<li><a href="instruction.html" class="trigger"><span><i class="icon-port"></i>使用说明</span></a>
+										<!--<ul>
+											<li><a href="#">权限说明</a></li>
+											<li><a href="#">下载说明</a></li>										
+										</ul>-->
+									</li>
+									<!--<li><a href="#" class="trigger"><span><i class="icon-blog"></i>意见反馈</span></a>
+									</li>-->
+									<li><a href="contact.html" class="trigger"><span><i class="icon-contact"></i>联系我们</span></a></li>
+									<li><a href="contact.html"><span>联系我们</span></a></li>
+
+								</ul>
+							</nav>	
+                       </div>						
+					   <!-- end navigation -->
+					</div> <!-- End six teen columns -->
+			     </div>
+			  </div> <!-- End header top -->
+    
+	
+    <div class="content">		
+				
+	 <div class="content_wrapper">	
+	 <div class="page_title_wrapper">
+	    <div class="container sixteen columns">
+          <div class="page_title_inner">	      			       	
+				<span class="main_t_1"> 数据浏览 </span>
+		  </div>			
+        </div>			
+      </div> <!-- End page title wrapper -->
+	<div class="clear"></div>
+	
+	  <div class="container">    
+		<div class="content_wrapper_inner">
+	
+        <div class="twelve columns row offset-by-one right">
+		
+	      <div class="port_inner">
+		   
+
+	 <ul class="portfolio group" style="margin-bottom:0px;"> 
+		<li class="one-third column" data-id="id-1" data-type="table">
+			        
+			       <div class="view view-tenth">
+                     <span class="image_holder">				   
+                         <img src="images/large/a10.jpg" alt="" class="scale-with-grid" />						 
+					 </span>
+                    <div class="mask">
+					  <div class="mask_wrapper">                        
+                           <a href="images/large/a10.jpg" title="" data-rel="prettyPhoto[portfolio]" class="link1"><img src="images/icons/icon_zoom.png" class="scale-with-grid" /></a>     
+                      </div>
+					</div>
+                  </div>
+				  <span class="clear"></span>
+				  <div class="view_title">
+					    <span class="port_cat"><p>
+							<table id="table-style" data-toggle="table" data-url="./bsTable/data/demo.json"
+       data-click-to-select="true"
+       data-row-style="rowStyle"
+       data-query-params="queryParams"
+       data-height="300" class="table table-hover">
+    <thead>
+
+    <tr style="background: none repeat scroll 0% 0% #639898;
+    color: #FFF;
+    padding-top: 20px;
+    font-size: 18px;">
+        <th data-field="id">序号</th>
+        <th data-field="zh_name">中文名称</th>
+        <th data-field="en_name">英文名称</th>
+        <th data-field="pub_date">发布时间</th>
+        <th data-field="pub_org">发布机构</th>
+    </tr>
+    </thead>
+</table>
+
+						</p><p style="margin-top:10px;text-align:right;margin-right:30px;"><a class="btn btn-primary btn-large theme-login" href="javascript:;">点击查看更多</a></p> </span>
+					</div>
+					<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close" style="color:#333;">×</a>
+          <h4>登录 是一种态度</h4>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="theme-signin" name="loginform" action="" method="post">
+                <ol>
+                     <li><h4>请先登录！</h4></li>
+                     <li><strong>用户名：</strong><input class="ipt" type="text" name="log" value="wangnn@qibebt.ac.cn" size="20" /></li>
+                     <li><strong>密码：</strong><input class="ipt" type="password" name="pwd" value="***" size="20" /></li>
+                     <li><input class="btn btn-primary" type="submit" name="submit" value=" 登 录 " /></li>
+                </ol>
+           </form>
+     </div>
+</div>
+<div class="theme-popover-mask"></div>
+	<ul>
+		<li class="one-third column" data-id="id-2" data-type="game">
+			        
+			       <div class="view view-tenth">
+                     <span class="image_holder">				   
+                         <img src="images/large/15.jpg" alt="" class="scale-with-grid" />						 
+					 </span>
+                    <div class="mask">
+					  <div class="mask_wrapper">                        
+                           <a href="images/large/15.jpg" title="" data-rel="prettyPhoto[portfolio]" class="link1"><img src="images/icons/icon_zoom.png" class="scale-with-grid" /></a>     
+                      </div>
+					</div>
+                  </div>
+				  <span class="clear"></span>
+				  <div class="view_title">
+						<span class="port_cat"><p style="margin:0 auto;">
+							<img src="images/柱状图.png" alt="数据浏览页面图形展示demo" class="" width="300px;"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/曲线图.jpg" alt="数据浏览页面图形展示demo" class="" width="300px;"/>
+						</p> </span>
+					</div>
+		</li>
+		
+       
+		
+		
+	</ul>
+           <span class="clear"></span> 
+			   </div><!-- End Portfolio -->
+			
+		 <div class="clear"></div>
+
+		</div>
+		
+		
+ <!-- Sidebar Right -->
+
+         <div class="three columns sidebar">
+		    
+			<div class="three columns alpha widget">
+                    <div id="using_json_2" class="demo">
+						</div>
+						<script>
+						$(function () {
+							$('#using_json_2').jstree({ 'core' : {
+							    'data' : [						       
+							       { "id" : "ajson2", "parent" : "#", "text" : "政策", "state" : { "opened" : true } },
+							       { "id" : "ajson3", "parent" : "ajson2", "text" : "法律法规" , "state" : { "opened" : true } },
+							       { "id" : "ajson4", "parent" : "ajson2", "text" : "发展规划"  },
+								   { "id" : "ajson5", "parent" : "ajson3", "text" : "美国" },
+								   { "id" : "ajson6", "parent" : "ajson3", "text" : "日本" },
+								   { "id" : "ajson1", "parent" : "ajson2", "text" : "路线图" }
+							    ]
+							} });
+						});</script>
+                <div class="clear"></div>
+            </div>
+	
+			
+	
+            
+            
+			   
+			
+			
+    
+        </div>
+				 
+		<div class="clear"></div>
+	        
+
+	    </div>  <!-- End main page wrapper -->		 
+	
+    <div class="clear"></div>	
+		   </div>  <!-- End container -->	
+        </div> 		<!-- End Content wrapper -->
+    </div>	<!-- End content -->
+<div class="content_shadow"></div>
+         <!-- Footer -->
+
+         <footer id="footer" style="">	
+		    
+			<div class="container">
+			  <div class="footer_inner"> 
+			  
+			    <div class="sixteen columns">
+			        
+				 <div class="ten columns power_bt">
+			Copyright &copy; 2015 QIBEBT 版权所有&nbsp;&nbsp;<br>技术支持：中国科学院青岛生物能源与过程研究所条件保障部		
+			</div>
+			
+            <div class="four columns">
+			    <div class="social_wrapper">  
+							<a href="#"><img src="images/qibebt.png" alt="qibebtLogo"/></a>
+				</div>
+            </div>
+				 
+               
+               
+			
+			
+                 </div>
+			   </div>
+            </div>
+		 </footer> <!-- End Footer -->
+		
+	</div> <!-- End main_wrapper_inner -->	   
+</div> <!-- End main_wrapper -->
+
+<!--侧边树加jstree-->
+<script src="./assets/jquery-1.10.2.min.js"></script>
+	<script src="./assets/jquery.address-1.6.js"></script>
+	<script src="./assets/vakata.js"></script>
+	<script src="./assets/dist/jstree.min.js"></script>
+	
+	<script>$.each($q,function(i,f){$(f)});$q=null;</script>
+<!--侧边树加jstree-->
+
+<!--bs table 表格显示-->
+<!--<script src="./bsTable/js/jquery-2.1.3.min.js"></script>
+<script src="./bsTable/js/bootstrap.min.js"></script>-->
+<script src="./bsTable/js/bootstrap-table.min.js"></script>
+<script src="./bsTable/js/bootstrap-table-zh-CN.min.js"></script>
+<script>
+    $(function () {
+        $('#hover, #striped, #condensed').click(function () {
+            var classes = 'table';
+
+            if ($('#hover').prop('checked')) {
+                classes += ' table-hover';
+            }
+            if ($('#condensed').prop('checked')) {
+                classes += ' table-condensed';
+            }
+            $('#table-style').bootstrapTable('destroy')
+                .bootstrapTable({
+                    classes: classes,
+                    striped: $('#striped').prop('checked')
+                });
+        });
+    });
+
+    function rowStyle(row, index) {
+        var classes = ['active', 'active', 'active', 'active', 'active'];
+
+        if (index % 2 === 0 && index / 2 < classes.length) {
+            return {
+                classes: classes[index / 2]
+            };
+        }
+        return {};
+    }
+</script>
+
+<!--jquery弹出遮罩层用于弹出登陆框-->
+<script>
+jQuery(document).ready(function($) {
+	$('.theme-login').click(function(){
+		$('.theme-popover-mask').fadeIn(100);
+		$('.theme-popover').slideDown(200);
+	})
+	$('.theme-poptit .close').click(function(){
+		$('.theme-popover-mask').fadeOut(100);
+		$('.theme-popover').slideUp(200);
+	})
+
+})
+</script>
+<!--jquery弹出遮罩层用于弹出登陆框-->
+
+</body>
+</html>

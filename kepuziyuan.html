@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<!-- page title -->
+<title>Qibebt基础数据平台</title>
+<!-- add css stylesheets -->	
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/skeleton.css"/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/jstable.css" />
+<link href="css/sorttable.css" rel="stylesheet" type="text/css" />
+<!-- login Form -->
+<link rel="stylesheet" type="text/css" href="css/login.css"/>
+
+<!--[if gte IE 8]>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/ie8up.css" />
+<![endif]-->
+<!--[if gte IE 9]>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/ie8up.css" />
+<![endif]-->
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/cas.ico">
+<!-- jquery -->
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+
+<!--bs table 表格显示-->
+   <link rel="stylesheet" href="./bsTable/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./bsTable/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="./bsTable/css/bootstrap-table.min.css" />
+<!--bs table 表格显示-->
+
+</head>
+<body>	
+
+
+<!-- Image Back ground and pattern Back ground  -->
+   
+    <!-- <div id="pattern_bg"></div>  -->
+     <img src="images/bg.jpg" alt="" id="background" />
+	<div class="header_top_second">
+		<a href="#"><img src="images/0-3.jpg" alt="这里放banner，待设计" width="1040px" height="200px"/></a>
+	</div>
+
+<div class="clear"></div>
+</div>
+		
+<!-- Main header -->
+<div id="main_wrapper">
+	<div class="main_wrapper_inner">
+      
+      <!-- Header -->
+              <div class="header_menu">
+			     <div class="header_top_inner">
+				    <div class="container sixteen columns">
+				         <!-- begin navigation -->
+					 <div class="main_menu">
+						<nav id="dropdown">
+							<ul class="sf-menu clearfix">								
+								<li><a href="login.html" class=""><span><i class="icon-home"></i>网站首页</span></a>
+									</li>
+									<li><a href="intro2.html" class=""><span><i class="icon-feature"></i>平台简介</span></a>
+										<!--<ul>
+											<li><a href="#">功能定位</a></li>
+											<li><a href="#">数据内容</a></li>
+											<li><a href="#">共享机制</a></li>
+										</ul>-->
+									</li>
+									<li><a href="/showtab/show-demo.html" class="trigger"><span><i class="icon-staff"></i>浏览查询</span></a>
+										<!--<ul>
+											<li><a href="#">按主题浏览</a></li>
+										</ul>-->
+									</li>	
+									<li><a href="fuwuanli2.html" class="trigger"><span><i class="icon-service"></i>服务案例</span></a></li>									
+									<li><a href="instruction.html" class="trigger"><span><i class="icon-port"></i>使用说明</span></a>
+										<!--<ul>
+											<li><a href="#">权限说明</a></li>
+											<li><a href="#">下载说明</a></li>										
+										</ul>-->
+									</li>
+									<li><a href="kepuyuandi.html" class="trigger"><span><i class="icon-blog"></i>科普园地</span></a>
+									</li>
+									<li><a href="contact.html" class="trigger"><span><i class="icon-contact"></i>联系我们</span></a></li>
+									<li><a href="#"><span>联系我们</span></a></li>
+							</ul>
+						</nav>	
+                       </div>						
+				 <!-- end navigation -->
+					</div> <!-- End six teen columns -->
+			     </div>
+			  </div> <!-- End header top -->
+	
+<div class="content">		
+				
+	 <div class="content_wrapper">	
+
+	<div class="clear"></div>
+	
+	  <div class="container">    
+		<div class="content_wrapper_inner">
+	
+        <div class="row">
+		
+	      <div class="port_inner">
+
+	   <div class="clear"></div>   
+
+	 <ul class="portfolio group"> 
+		<li class="" data-id="id-1" data-type="advertising">
+			        <div class="">
+					   <div class="pb_title_wrapper">
+						   <h3 class="pb_title" style="color:#32CD32;margin-left:50px;">科普园地-资源</h3><p style="text-align:right;margin-right:30px;"><a class="btn btn-primary btn-large" href="javascript:history.go(-1);" style="color:#fff;">返回</a></p>
+						   <div class="clear"></div>
+						</div>  
+					</div>
+				  <span class="clear"></span>
+				  <div class="view_title">
+					    
+					<div id="tablewrapper" >
+		<div id="tableheader">
+            <span class="details">
+				<div><span id="startrecord"></span>-<span id="endrecord"></span> 共:<span id="totalrecords"></span>条</div>
+        		<div class="btn-reset"><p style="text-align:right;margin-right:30px;"><a class="btn btn-primary btn-large theme-login" href="javascript:sorter.reset()">重置</a></p></div>
+        	</span>
+        </div>
+        <section style="height:400px;">
+        <table cellpadding="0" cellspacing="0" border="0" id="table" class="tinytable">
+              <tbody>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">微观属性</span>：各类资源微观视角的属性特征，包括化学组成、元素组成、工业成分、物理性质等。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">宏观储量</span>：以统计分析、实地调研、经验估算等方法获得的各类废弃物资源（传统生物质资源）的理论储量和可收集利用情况。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">发展潜力</span>：以统计分析、实地调研、经验估算等方法获得的主动培育式生物质资源（能源植物和能源藻类等）未来发展潜力的相关基础数据。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">理论资源量</span>：理论上每年最大可能产出的生物质资源量，一般根据理论产出系数进行估算。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">可收集资源量</span>：通过现有收集方式可供实际利用的生物质资源量，可通过理论资源量与可收集系数来确定</td>
+                </tr>
+                <tr>
+                    <td class="name"><span style="font-weight:bold;">农作物秸秆</span>：农作物生长与收割过程中产生的废弃物，亦是指去除果实的农作物茎秆部分，包括各类粮食作物、经济作物、油料作物的秸秆，如玉米秸、高粱秸、麦秸、稻草等。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">加工废弃物</span>：农产品在初加工过程中产生的副产品，主要包括稻壳、玉米芯、甘蔗渣等，他们主要来源于粮食加工厂、食品加工厂、制糖厂和酿酒厂等，产地相对集中，易于收集。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">禽畜粪便</span>：禽畜养殖过程中产生的排泄物的总称，是其他形态生物质（主要为粮食、农作物秸秆和牧草等）的转化形式，包括禽畜排出的粪便及其与垫草的混合物。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">林木生物质</span>：可用于能源或薪材的森林及其他木质资源，包括林木生物质和林业剩余物。其中林木生物质是指以能源利用为目的而种植的林木，所生产的林木用于产出能源，如薪炭林。林业剩余物是指林木生长、生产和加工过程中产生的修整去除的枝叶、林间抚育物，以及木材加工过程中产生的锯末、树皮等，俗称林业三剩物，即采伐剩余物、造林剩余物和木材加工剩余物。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">生活垃圾</span>：城市/城镇居民在日常生活中产生的固体废弃物，如废纸、木屑、蔬菜、瓜果等废弃物，是日常生活的必须产生的废弃物品。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">有机废水</span>：包括生活污水和工业废水。其中生活污水主要是由城镇居民生活、商业和服务业的各种排水组成，如冷却水、洗浴排水、洗衣排水、厨房排水、粪便污水等。工业有机废水主要是酒精、酿酒、制糖、食品、制药、造纸及屠宰等行业生产过程中排放出的废水等。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">污泥</span>：是由水和污水处理过程所产生的固体沉淀物质。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">能源植物</span>：以能源利用为目的而种植的植物，指那些光能利用效率高、具有合成较高还原性烃的能力且可生产接近石油成分或石油替代产品的植物。根据其化学组成和用途，具体可分为淀粉类作物（木薯、甘薯、玉米等）、糖类作物（甘蔗、甜高粱、甜菜等）、油料作物（大豆、油菜、麻风树、油茶等）、纤维素类（桉树、芒草等）以及能源藻类作物（大藻、微藻等）等。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">农业废弃物</span>：即农业废物。是指在整个农业生产过程中被丢弃的有机类物质，通常我们所说的农业废弃物主要指农作物秸秆和畜禽粪便。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">能源藻类</span>：是通过基因改造技术制备的，能够进行光合作用，利用阳光、淡水或咸水、二氧化碳生产乙醇等替代能源产品的藻类。</td>
+                </tr>
+		<tr>
+                    <td class="name"><span style="font-weight:bold;">海洋生物质</span>：直接或间接通过光合作用形成的各种海洋有机体，包括所有海洋动物、海洋植物和海洋微生物以及由这些生命体排泄和代谢的有机物质。是海洋植物利用光合作用将太阳能以化学能的形式贮存的能量形式。</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        <div id="tablefooter">
+          <div id="tablenav">
+            	<div>
+                    <img src="images/first.png" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                    <img src="images/previous.png" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                    <img src="images/next.png" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                    <img src="images/last.png" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                </div>
+                <div>
+                	<select  id="pagedropdown"></select>
+				</div>
+                <div class="btn-reset"><p style="text-align:right;margin-right:30px;"><a class="btn btn-primary btn-large theme-login" href="javascript:sorter.showall()">显示全部记录</a></p></a>
+                </div>
+            </div>
+			<div id="tablelocation">
+            <div>	
+				<span class="txt-page">每页显示</span>
+                  <select onchange="sorter.size(this.value)">
+                    <option value="5">5</option>
+                        <option value="10" selected="selected">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                    
+                </div>            	
+                <div class="page txt-txt"><span id="currentpage"></span> / <span id="totalpages"></span></div>
+            </div>
+        </div>
+    </div>
+        
+				</div>
+				</li> 
+			</ul>
+           <span class="clear"></span> 
+			   </div><!-- End Portfolio -->
+			
+		 <div class="clear"></div>
+
+		</div>
+		
+			
+		   </div>  <!-- End container -->	
+        </div> 		<!-- End Content wrapper -->
+    </div>	<!-- End content --> 
+
+    		<!-- Footer -->
+
+         <footer id="footer" style="">	
+		    
+			<div class="container">
+			  <div class="footer_inner"> 
+			  
+			    <div class="sixteen columns">
+			        
+				 <div class="ten columns power_bt">
+			Copyright &copy; 2015 QIBEBT 版权所有&nbsp;&nbsp;<br>技术支持：中国科学院青岛生物能源与过程研究所条件保障部		
+			</div>
+			
+            <div class="four columns">
+			    <div class="social_wrapper">  
+							<a href="#"><img src="images/qibebt.png" alt="qibebtLogo"/></a>
+				</div>
+            </div>
+                 </div>
+			   </div>
+            </div>
+		 </footer> <!-- End Footer -->
+
+
+          
+		
+	</div> <!-- End main_wrapper_inner -->	   
+</div> <!-- End main_wrapper -->
+<script type="text/javascript" src="js/sorttable.js"></script>
+	<script type="text/javascript">
+	var sorter = new TINY.table.sorter('sorter','table',{
+		evenclass:'evenrow',
+		oddclass:'oddrow',
+		evenselclass:'evenselected',
+		oddselclass:'oddselected',
+		paginate:true,
+		size:10,
+		currentid:'currentpage',
+		totalid:'totalpages',
+		startingrecid:'startrecord',
+		endingrecid:'endrecord',
+		totalrecid:'totalrecords',
+		hoverid:'selectedrow',
+		pageddid:'pagedropdown',
+		navid:'tablenav',
+		sortdir:1,
+		init:true
+	});
+  </script>
+  <script src="http://www.jqueryfuns.com/Content/js/jquery-1.8.3.min.js"></script>  
+</body>
+</html>
