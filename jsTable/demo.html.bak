@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>bootstrap table for 基础数据平台</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-table.min.css" />
+</head>
+<body>
+<div class="container">
+<table id="table-style" data-toggle="table"
+       data-url="data/demo.json"
+       data-click-to-select="true"
+       data-row-style="rowStyle"
+       data-query-params="queryParams"
+       data-height="400" class="table table-hover">
+    <thead>
+
+    <tr style="background: none repeat scroll 0% 0% #639898;
+    color: #FFF;
+    padding-top: 20px;
+    font-size: 18px;">
+        <th data-field="id">ID</th>
+        <th data-field="zh_name">中文名称</th>
+        <th data-field="en_name">英文名称</th>
+        <th data-field="pub_date">发布时间</th>
+        <th data-field="pub_org">发布机构</th>
+    </tr>
+    </thead>
+</table>
+</div>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table-zh-CN.min.js"></script>
+<script>
+    $(function () {
+        $('#hover, #striped, #condensed').click(function () {
+            var classes = 'table';
+
+            if ($('#hover').prop('checked')) {
+                classes += ' table-hover';
+            }
+            if ($('#condensed').prop('checked')) {
+                classes += ' table-condensed';
+            }
+            $('#table-style').bootstrapTable('destroy')
+                .bootstrapTable({
+                    classes: classes,
+                    striped: $('#striped').prop('checked')
+                });
+        });
+    });
+
+    function rowStyle(row, index) {
+        var classes = ['active', 'active', 'active', 'active', 'active'];
+
+        if (index % 2 === 0 && index / 2 < classes.length) {
+            return {
+                classes: classes[index / 2]
+            };
+        }
+        return {};
+    }
+</script>
+</body>
+</html>
